@@ -34,12 +34,7 @@ app
       err ? res.send(err.toString()) : res.send(data)
     )
   )
-  // .post((req, res) => {
-  //   const newUser = new user(req.body);
-  //   newUser.save((err) =>
-  //     err ? res.end("noooo") : res.send("user added successfully")
-  //   );
-  // })
+
   .post((req, res) => {
     const newUser = new user(req.body);
     newUser.save((err) =>
